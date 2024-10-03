@@ -1,0 +1,16 @@
+export const Appcolors = {
+  primary: '#5D3EBD',
+  white: '#FFFFFF',
+  black: '#000000',
+  gray: '#C4C4C4',
+  lightGray: '#F5F5F5',
+  red: '#FF0000',
+  yellow: '#FFEB00',
+  cyan: '#00FFFF',
+  magenta: '#FF00FF',
+  teal: '#008080',
+  orange: '#FFA500',
+  pink: '#FFC0CB',
+  brown: '#A52A2A',
+  brownDark: '#696969',
+};
