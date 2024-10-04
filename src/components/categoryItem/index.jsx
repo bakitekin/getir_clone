@@ -1,7 +1,6 @@
 // import libraries
 import React from 'react';
 import {
-  View,
   Text,
   StyleSheet,
   TouchableOpacity,
@@ -11,12 +10,17 @@ import {
 } from 'react-native';
 import {Appcolors} from '../../theme/Appcolors';
 import categoriesGetir from '../../assets/categoriesGetir';
+import {useNavigation} from '@react-navigation/native';
 
 const {width} = Dimensions.get('window');
 
 const CategoryItem = ({item}) => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={styles.categoryItem}>
+    <TouchableOpacity
+      onPress={() => navigation.navigate('Category')}
+      style={styles.categoryItem}>
       <Image source={{uri: item.src}} style={styles.categoryImage} />
       <Text style={styles.categoryText}>{item.name}</Text>
     </TouchableOpacity>

@@ -28,7 +28,7 @@ const Header = () => {
         />
       </View>
       <View style={styles.tvsContainer}>
-        <Text style={styles.text3}>Tvs</Text>
+        <Text style={styles.text3}>TVS</Text>
         <View style={styles.tvs}>
           <Text style={styles.text4}>13</Text>
           <Text style={styles.text5}>dk</Text>
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     backgroundColor: Appcolors.yellow,
     justifyContent: 'flex-start',
     flexDirection: 'row',
-    marginTop: 80,
   },
   containerTwo: {
     width: '81%',
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignItems: 'center',
     paddingHorizontal: 10,
     flexDirection: 'row',
@@ -76,12 +75,15 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   text2: {
-    fontSize: 12,
+    fontSize: 13,
     textAlign: 'center',
     marginLeft: 5,
+    fontWeight: '500',
+    color: Appcolors.brownDark,
   },
   icon: {
     marginLeft: 10,
+    fontWeight: 'bold',
   },
   tvsContainer: {
     width: '20%',
@@ -93,13 +95,13 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: 'center',
     color: Appcolors.primary,
-    fontWeight: '600',
+    fontWeight: '700',
+    marginRight: 10,
   },
   text4: {
     fontSize: 25,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginLeft: 5,
     color: Appcolors.primary,
   },
   text5: {
@@ -107,6 +109,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
     fontWeight: '600',
     color: Appcolors.primary,
+    marginRight: 10,
   },
 
   tvs: {
